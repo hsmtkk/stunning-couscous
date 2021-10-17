@@ -7,18 +7,18 @@ pub struct Car {
 }
 
 #[derive(Default)]
-pub struct CarBuilder{
+pub struct CarBuilder {
     car: Car,
 }
 
 impl Builder for CarBuilder {
-    fn reset(&mut self){
+    fn reset(&mut self) {
         self.car = Car::default();
     }
-    fn set_seats(&mut self, number:i64){
+    fn set_seats(&mut self, number: i64) {
         self.car.seats = number;
     }
-    fn set_engine(&mut self){
+    fn set_engine(&mut self) {
         self.car.engine = "middle power engine".to_string();
     }
 }
