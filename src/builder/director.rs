@@ -1,8 +1,10 @@
-use super::builder::Builder;
+use super::bd::Builder;
 
+#[allow(dead_code)]
 struct Director {}
 
 impl Director {
+    #[allow(dead_code)]
     fn construct_sports_car(&self, builder: &mut dyn Builder) {
         builder.reset();
         builder.set_seats(2);
@@ -18,6 +20,6 @@ mod tests {
         let dir = super::Director {};
         let mut builder = CarBuilder::default();
         dir.construct_sports_car(&mut builder);
-        let car = builder.get_product();
+        let _car = builder.get_product();
     }
 }

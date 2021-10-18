@@ -1,4 +1,4 @@
-use super::builder::Builder;
+use super::bd::Builder;
 
 #[derive(Clone, Default)]
 pub struct Car {
@@ -24,6 +24,7 @@ impl Builder for CarBuilder {
 }
 
 impl CarBuilder {
+    #[allow(dead_code)]
     pub fn get_product(&self) -> Car {
         self.car.clone()
     }

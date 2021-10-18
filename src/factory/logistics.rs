@@ -7,6 +7,7 @@ pub trait Logistics {
 pub struct RoadLogistics {}
 
 impl RoadLogistics {
+    #[allow(dead_code)]
     fn new() -> RoadLogistics {
         RoadLogistics {}
     }
@@ -21,6 +22,7 @@ impl Logistics for RoadLogistics {
 pub struct SeaLogistics {}
 
 impl SeaLogistics {
+    #[allow(dead_code)]
     fn new() -> SeaLogistics {
         SeaLogistics {}
     }

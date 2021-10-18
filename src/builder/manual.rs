@@ -1,4 +1,4 @@
-use super::builder::Builder;
+use super::bd::Builder;
 
 #[derive(Clone, Default)]
 pub struct Manual {
@@ -23,6 +23,7 @@ impl Builder for ManualBuilder {
 }
 
 impl ManualBuilder {
+    #[allow(dead_code)]
     fn get_product(&self) -> Manual {
         self.manual.clone()
     }

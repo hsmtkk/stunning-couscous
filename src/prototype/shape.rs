@@ -1,6 +1,7 @@
 pub struct Shape {
     x: i64,
     y: i64,
+    #[allow(dead_code)]
     color: String,
 }
 
@@ -38,6 +39,6 @@ mod tests {
     #[test]
     fn test0(){
         let circle0 = super::Circle::new(0, 1, 2);
-        let circle1 = circle0.clone();
+        let _circle1 = circle0.clone();
     }
 }
